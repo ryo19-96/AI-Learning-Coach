@@ -3,12 +3,14 @@
 ## 🎯 Purpose（目的）
 本・紙／PC での学習・開発セッションを記録し、  
 AI がセッションごと & 朝/夜に振り返り・計画・理解補助を行い、  
-ツェッテルカステン形式のノートを自動生成する “学習コーチ兼 Knowledge Assistant” を作る。
+Obsidianと連携してツェッテルカステン形式のノートを自動生成する “学習コーチ兼 Knowledge Assistant” を作る。
 
+- PC起動時に自動でAIが起動する
 - 日々の計画（Today’s Goals）は AI が自動提案  
-- セッション単位で「自分で短く説明」→ AI が要約/質問/次やること/ノート化  
+- セッション単位で「自分で短く説明」→ AI が要約/質問（理解度確認、内容確認）/次やること/ノート化  
 - Obsidian（ツェッテルカステン）と自動連携  
 - 長期・中期の目標は AI と定期的に策定し、日次は AI が切り出す
+- 朝に日々の計画を提案して、夜にやったことをまとめて復習などを促す
 
 
 # 🧭 Scope（範囲）
@@ -30,7 +32,7 @@ AI がセッションごと & 朝/夜に振り返り・計画・理解補助を�
 
 # 🏗️ System Architecture（アーキテクチャ）
 
-## 🌐 技術スタック
+## 🌐 技術スタック（案）
 - Frontend：Next.js（React, TypeScript）
 - Backend：FastAPI（Python）
 - AI：Azure OpenAI（API）
@@ -53,7 +55,7 @@ AI がセッションごと & 朝/夜に振り返り・計画・理解補助を�
 
 
 # 🗂️ Repository Structure（モノレポ）
-
+現時点での構想
 your-project-root/
 ├─ frontend/              # Next.js
 │  ├─ src/
@@ -169,7 +171,3 @@ your-project-root/
 ## Step 4：Rust/Go ロガー（将来）
 - PCのアクティビティログを追加し、セッション精度を上げる
 
-
-# 🎉 Ready to Start
-この内容を README として貼れば、  
-目的・範囲・構成・仕様・ロードマップがすべて揃った「プロジェクトの種」になります。
